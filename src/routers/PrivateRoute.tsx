@@ -1,7 +1,7 @@
 import { LoginPage } from '../pages/LoginPage';
 import React, { useState } from 'react';
 import { Route } from 'react-router-dom';
-import { useIsLoggedIn } from '../hooks/isLoggedIn';
+import { useIsLoggedIn } from '../hooks/useIsLoggedIn';
 
 export const PrivateRoute = ({ component, ...rest }: any) => {
   const isLoggedIn = useIsLoggedIn();
